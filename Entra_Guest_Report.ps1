@@ -1,7 +1,6 @@
 # Get all guest users in your Entra Environment
 #Requires -Modules Microsoft.Graph.Users
-Import-Module Microsoft.graph.users
-Import-Module Microsoft.Graph.authentication
+
 # Connect to Microsoft Graph
 Write-Host "Connecting to Microsoft Graph..." -ForegroundColor Yellow
 Connect-MgGraph -Scopes "User.Read.All"
