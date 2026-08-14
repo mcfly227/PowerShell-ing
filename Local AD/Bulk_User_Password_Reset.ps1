@@ -1,3 +1,14 @@
+<#
+.SYNOPSIS
+    Resets passwords for a list of Active Directory users from a CSV, then
+    exports the resulting username/password pairs to a CSV.
+
+.NOTES
+    The output CSV contains PLAINTEXT passwords. Treat it as a secret:
+    restrict access, distribute securely, and delete it once passwords
+    have been handed out.
+
+#>
 #Requires -Modules ActiveDirectory
 
 # --- SCRIPT CONFIGURATION ---
